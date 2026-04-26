@@ -6,7 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of fourieR is to ...
+The goal of fourieR is to compute the Discrete Fourier Transform and Power Spectral Density
+    of a signal using real-valued least squares decomposition, avoiding the 
+    use of complex numbers.
 
 ## Installation
 
@@ -14,7 +16,7 @@ You can install the development version of fourieR from [GitHub](https://github.
 
 ``` r
 # install.packages("pak")
-pak::pak("ryannruehman/freqnomenal")
+pak::pak("ryannruehman/fourieR")
 ```
 
 ## Example
@@ -23,6 +25,9 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(fourieR)
-## basic example code
+signal <- c(2, 4, 1, -7, 2, 3, 5, -4)
+time <- c(0, 1, 2, 3, 4, 5, 6, 7)
+dft(signal, time)
+psd(signal, time)
 ```
 
