@@ -27,6 +27,7 @@ This is a basic example which shows you how to solve a common problem:
 library(fourieR)
 signal <- c(2, 4, 1, -7, 2, 3, 5, -4)
 time <- c(0, 1, 2, 3, 4, 5, 6, 7)
+frequencies(signal, time)
 dft(signal, time)
 psd(signal, time)
 ```
