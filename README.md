@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 The goal of fourieR is to compute the Discrete Fourier Transform and Power Spectral Density
-    of a signal using real-valued least squares decomposition, avoiding the 
+    of a signal using signal decomposition, avoiding the 
     use of complex numbers.
 
 ## Installation
